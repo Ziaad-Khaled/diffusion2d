@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elsherzd_diffusion2d"
+version = "0.0.1"
+description = "A Python package for solving the two-dimensional diffusion equation"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=1.19.0",
+    "matplotlib>=3.3.0",
+]
+[project.urls]
+Repository = "https://github.com/Simulation-Software-Engineering/diffusion2d"
+
+[tool.setuptools]
+packages = ["elsherzd_diffusion2d"]
