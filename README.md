@@ -8,9 +8,17 @@ The code used in this exercise is based on [Chapter 7 of the book "Learning Scie
 
 ## Description
 
+This package solves the two-dimensional diffusion equation using finite difference methods. The implementation simulates heat diffusion in a square plate with initial conditions: a cold square domain (300 K) with a hot circular disc (700 K) at the center. The simulation uses forward-difference in time and central-difference in space to propagate the temperature field over time.
+
 ## Installing the package
+
+```bash
+pip install elsherzd_diffusion2d
+```
 
 ## Running this package
 
-## Citing
-
+```python
+from elsherzd_diffusion2d import solve
+solve()
+```

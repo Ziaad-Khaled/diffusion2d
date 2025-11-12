@@ -1,12 +1,6 @@
-"""
-Solving the two-dimensional diffusion equation
-
-Example acquired from https://scipython.com/book/chapter-7-matplotlib/examples/the-two-dimensional-diffusion-equation/
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
-from output import create_plot, output_plots
+from .output import create_plot, output_plots
 
 
 def do_timestep(u_nm1, u, D, dt, dx2, dy2):
@@ -46,3 +40,4 @@ def solve(dx=0.1, dy=0.1, D=4.):
             fig_counter += 1
             im = create_plot(fig, 220 + fig_counter, u, n * dt * 1000, T_cold, T_hot)
     output_plots(fig, im)
+
